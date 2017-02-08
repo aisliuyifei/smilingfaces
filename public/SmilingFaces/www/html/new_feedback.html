@@ -1,0 +1,51 @@
+<ons-page id="newFeedbackPage">
+  <ons-toolbar>
+    <div class="left"><ons-back-button>返回</ons-back-button></div>
+    <div class="center">我要报错</div>
+    <div class="right">
+      <ons-if platform="android">
+        <ons-toolbar-button component="button/save">
+          <ons-icon icon="md-save"></ons-icon>
+        </ons-toolbar-button>
+      </ons-if>
+    </div>
+  </ons-toolbar>
+
+  <ons-list>
+    <ons-list-header>如果姓名和照片不符，请指出：</ons-list-header>
+    <ons-list-item modifier="nodivider">
+      <div class="center">
+        <ons-input id="code-input" type="text" placeholder="此处填写照片编号" float></ons-input>
+      </div>
+    </ons-list-item>
+    <ons-list-item modifier="nodivider">
+      <div class="center">
+        <ons-input id="description-input" type="text" placeholder="此处填写正确的学生姓名" float></ons-input>
+      </div>
+    </ons-list-item>
+  </ons-list>
+
+  <ons-list>
+    <ons-list-header>其他问题</ons-list-header>
+    <ons-list-item modifier="nodivider">
+      <label class="center" for="inner-highlight-input">
+        照片太丑，想换一张
+      </label>
+      <label class="right">
+        <ons-switch id="photo-input" input-id="inner-photo-input"></ons-switch>
+      </label>
+    </ons-list-item>
+    <ons-list-item modifier="nodivider">
+      <label class="center" for="inner-urgent-input">
+        照片不是本校成员
+      </label>
+      <label class="right">
+        <ons-switch id="error-input" input-id="inner-error-input"></ons-switch>
+      </label>
+    </ons-list-item>
+  </ons-list>
+
+  <ons-if platform="ios other">
+    <ons-button modifier="large" component="button/save">报错给作者</ons-button>
+  </ons-if>
+</ons-page>

@@ -1,0 +1,3 @@
+== README
+
+SmilingFaces under public fold is a stand alone webapp which can be complied by monoca.

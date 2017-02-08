@@ -1,0 +1,58 @@
+<ons-page id="testsPage">
+  <ons-toolbar>
+	<div class='left' id="currentScore" style="padding-left:10px;">
+		0
+	</div>
+  	<div id="testIdx" class='center'>
+		-/-
+	</div>
+  	<div class='right'>
+		<ons-toolbar-button id='resetButton'>
+			重新开始
+		</ons-toolbar-button>
+	</div>
+  </ons-toolbar>
+  <div>
+	  <p style="text-align:center">
+		  <image id="testImg" src="images/1.jpg" width="50%">
+	  </p>
+  </div>
+  
+  <ons-list id="choiceList">
+      <ons-list-item tappable>
+        <label class="left">
+          <ons-input name="name" type="radio" input-id="radio-0"></ons-input>
+        </label>
+        <label for="radio-0" class="center" id="label0">
+          A
+        </label>
+      </ons-list-item>
+      <ons-list-item tappable>
+        <label class="left">
+          <ons-input name="name" type="radio" input-id="radio-1"></ons-input>
+        </label>
+        <label for="radio-1" class="center" id="label1">
+          B
+        </label>
+      </ons-list-item>
+      <ons-list-item tappable choiceIdx=2>
+        <label class="left">
+          <ons-input name="name" type="radio" input-id="radio-2"></ons-input>
+        </label>
+        <label for="radio-2" class="center" id="label2">
+          C
+        </label>
+      </ons-list-item>
+      <ons-list-item tappable choiceIdx=3>
+        <label class="left">
+          <ons-input name="name" type="radio" input-id="radio-3"></ons-input>
+        </label>
+        <label for="radio-3" class="center" id="label3">
+          D
+        </label>
+      </ons-list-item>
+    </ons-list>
+</ons-page>
+
+
+

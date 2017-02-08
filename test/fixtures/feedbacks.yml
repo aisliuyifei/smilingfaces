@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  code: 1
+  desc: MyString
+  photo: false
+  error: false
+
+two:
+  code: 1
+  desc: MyString
+  photo: false
+  error: false
