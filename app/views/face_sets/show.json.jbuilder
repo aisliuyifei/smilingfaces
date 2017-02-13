@@ -1,0 +1,1 @@
+json.partial! "face_sets/face_set", face_set: @face_set

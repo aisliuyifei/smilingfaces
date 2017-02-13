@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Faces</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Token</th>
+      <th>U</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @faces.each do |face| %>
+      <tr>
+        <td><%= face.token %></td>
+        <td><%= face.u_id %></td>
+        <td><%= link_to 'Show', face %></td>
+        <td><%= link_to 'Edit', edit_face_path(face) %></td>
+        <td><%= link_to 'Destroy', face, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Face', new_face_path %>

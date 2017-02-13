@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  resources :face_sets
+  resources :faces do
+    collection do
+      get "search_by_token"
+    end
+  end
   resources :feedbacks
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

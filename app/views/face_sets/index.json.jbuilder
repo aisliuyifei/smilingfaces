@@ -1,0 +1,1 @@
+json.array! @face_sets, partial: 'face_sets/face_set', as: :face_set

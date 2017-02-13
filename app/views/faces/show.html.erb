@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Token:</strong>
+  <%= @face.token %>
+</p>
+
+<p>
+  <strong>U:</strong>
+  <%= @face.u_id %>
+</p>
+
+<%= link_to 'Edit', edit_face_path(@face) %> |
+<%= link_to 'Back', faces_path %>
